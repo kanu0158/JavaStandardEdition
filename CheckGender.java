@@ -16,6 +16,16 @@ public class CheckGender{
 
 
 		String gender = "";
+
+		switch(ch){
+			case '1':
+			case '3':gender = "남";break;
+			case '2':
+			case '4':gender = "여";break;
+			case '5':
+			case '6':gender = "외국인";break;
+		}
+		/*
 		if(ch == '1' || ch =='3'){
 			gender = "남";
 		}else if(ch == '2' || ch == '4'){
@@ -23,7 +33,7 @@ public class CheckGender{
 		}else if(ch == '5' || ch == '6'){
 			gender = "외국인";
 		}
-
+*/
 		System.out.println(name + " : " + ssn + " : " + gender);
 	}
 }
